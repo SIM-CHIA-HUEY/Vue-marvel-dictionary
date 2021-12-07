@@ -1,18 +1,26 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
 </template>
 
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #AA0505;
   text-align: center;
-  color: #2c3e50;
+  color: #FFFFFF;
+  padding :0px !important;
+  margin :0px !important;
 }
 
 #nav {
@@ -21,10 +29,11 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #FBCA03;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FBCA03;
 }
+
 </style>
