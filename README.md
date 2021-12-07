@@ -1,5 +1,10 @@
 # marvel-dictionary
 
+## Project planning
+https://trello.com/b/qtk0xPHQ/marvel-dictionary
+
+/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / 
+
 ## Project setup
 ```
 npm install
