@@ -12,7 +12,7 @@ h1{
 }
 
 .header{
-    background-color:#6A0C0B;
+    background-color:#171717;
     padding-top : 3vh;
     padding-bottom : 2vh;
     margin-bottom : 5vh;

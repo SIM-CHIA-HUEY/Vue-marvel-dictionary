@@ -29,6 +29,16 @@ const routes = [
     path: '/character/:id',
     name: 'character',
     component: () => import(/* webpackChunkName: "singleCharacter" */ '../views/SingleCharacter.vue')
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: () => import(/* webpackChunkName: "singleCharacter" */ '../components/Characters.vue')
+  },
+  {
+    path: '/detail/:id',
+    name: 'detail',
+    component: () => import(/* webpackChunkName: "singleCharacter" */ '../components/Detail.vue')
   }
 ]
 
