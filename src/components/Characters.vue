@@ -2,9 +2,10 @@
     <div class="col">
 
         <div v-for="character in characters">
-            <p>{{character.name}}</p>
-            <p>{{character.id}}</p>
-            <p>{{character.thumbnail.path}}.jpg</p>
+            <router-link :to="{ name: 'detail', params: { id: character.id } }">
+                
+                <p>{{character.name}}</p>
+            </router-link>
             <hr>
         </div>
         
