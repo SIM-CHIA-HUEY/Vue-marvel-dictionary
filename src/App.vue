@@ -19,8 +19,7 @@ export default {
   background-color: #AA0505;
   color: #FFFFFF;
   vertical-align: middle !important;
-    align-items : center;
-
+  
   padding :0px !important;
   margin :0px !important;
 }
