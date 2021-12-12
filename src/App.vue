@@ -17,8 +17,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #AA0505;
-  text-align: center;
   color: #FFFFFF;
+  vertical-align: middle !important;
+    align-items : center;
+
   padding :0px !important;
   margin :0px !important;
 }
