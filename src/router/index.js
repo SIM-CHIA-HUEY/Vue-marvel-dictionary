@@ -153,6 +153,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "singleCharacter" */ '../components/letter/Z.vue')
   },
   {
+    path: '/three',
+    name: 'Three',
+    component: () => import(/* webpackChunkName: "singleCharacter" */ '../components/number/Three.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: "PageNotFound",
     component: () => import(/* webpackChunkName: "singleCharacter" */ '../components/PageNotFound.vue')

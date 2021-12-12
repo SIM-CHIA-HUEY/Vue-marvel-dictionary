@@ -28,6 +28,7 @@
             <router-link :to="{ name: 'X' }"><p class="letter">X</p></router-link>
             <router-link :to="{ name: 'Y' }"><p class="letter">Y</p></router-link>
             <router-link :to="{ name: 'Z' }"><p class="letter">Z</p></router-link>
+            <router-link :to="{ name: 'Three' }"><p class="letter">3</p></router-link>
 
         </div>
 
@@ -75,7 +76,7 @@ export default {
     methods: {
         getCharacters: function(){
             axios
-            .get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&limit=50&offset=20`)
+            .get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&limit=50&offset=0`)
             .then(response => (this.characters = response.data.data.results))    
             .catch((error) => {
                 console.log(error)

@@ -8,7 +8,7 @@
             <router-link :to="{ name: 'B' }"><p class="letter">B</p></router-link>
             <router-link :to="{ name: 'C' }"><p class="letter">C</p></router-link>
             <router-link :to="{ name: 'D' }"><p class="letter">D</p></router-link>
-            <p class="selected-letter">E</p>
+            <router-link :to="{ name: 'E' }"><p class="letter">E</p></router-link>
             <router-link :to="{ name: 'F' }"><p class="letter">F</p></router-link>
             <router-link :to="{ name: 'G' }"><p class="letter">G</p></router-link>
             <router-link :to="{ name: 'H' }"><p class="letter">H</p></router-link>
@@ -30,16 +30,17 @@
             <router-link :to="{ name: 'X' }"><p class="letter">X</p></router-link>
             <router-link :to="{ name: 'Y' }"><p class="letter">Y</p></router-link>
             <router-link :to="{ name: 'Z' }"><p class="letter">Z</p></router-link>
-            <router-link :to="{ name: 'Three' }"><p class="letter">3</p></router-link>
+            <p class="selected-letter">3</p>
+
         </div>
 
-        <!-- Characters : E -->
+        <!-- Characters : 3 -->
         <div class="col-3">
                 
         </div>
         <div class="col-9">
             <div class="row cards-title">
-                <p class="p-0 m-0">E</p>
+                <p class="p-0 m-0">3</p>
             </div>
             <div class="row cards">
                 <div class="col-md-9 col-lg-3 card" v-for="character in characters">
@@ -58,13 +59,13 @@
 </template>
 
 <script> 
-import {public_key, secret_key} from './../../marvel'
+import {public_key, secret_key} from '../../marvel'
 import axios from 'axios'
 import Header from '../Header.vue'
 import Footer from '../Footer.vue'
 
 export default {
-    name: 'E',
+    name: 'Three',
 
     components: {
     Header,
@@ -84,7 +85,7 @@ export default {
     methods: {
         getCharacters: function(){
             axios
-            .get(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=e&apikey=${public_key}`)
+            .get(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=3&apikey=${public_key}&limit=100&offset=0&`)
             .then(response => (this.characters = response.data.data.results))    
             .catch((error) => {
                 console.log(error)

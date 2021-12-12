@@ -30,6 +30,7 @@
             <router-link :to="{ name: 'X' }"><p class="letter">X</p></router-link>
             <router-link :to="{ name: 'Y' }"><p class="letter">Y</p></router-link>
             <router-link :to="{ name: 'Z' }"><p class="letter">Z</p></router-link>
+            <router-link :to="{ name: 'Three' }"><p class="letter">3</p></router-link>
         </div>
 
         <!-- Characters : W -->

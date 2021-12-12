@@ -27,7 +27,7 @@
                         <div class="sub-title">This character is :</div>
                         
                         <div class="no-description" v-if="!char.description">
-                            TOP SECRET
+                            // TOP SECRET //
                         </div>
                         <div v-else>{{char.description}}</div>
                     </div>
@@ -118,11 +118,13 @@ a{
 
 .no-description{
     border-style:solid;
-    border-color: #AA0505 ;
+    border-color: #FBCA03 ;
     text-align: center;
-    color:#AA0505;
+    font-size: x-large;
+    color:#FBCA03;
     margin-top:10px;
     margin-bottom:10px;
+    background-color: #171717;
 
 }
 </style>
