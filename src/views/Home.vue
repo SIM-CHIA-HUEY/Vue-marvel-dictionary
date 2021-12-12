@@ -12,9 +12,6 @@
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import Characters from '@/components/Characters.vue'
-
-
-
 export default {
   name: 'Home',
   components: {
@@ -22,7 +19,6 @@ export default {
     Header, 
     Footer
   }
-
   
 }
 </script>
