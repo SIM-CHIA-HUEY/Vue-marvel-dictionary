@@ -1,4 +1,5 @@
 # marvel-dictionary
+Beware, this project cannot run after a build yet.
 
 ## Project planning
 https://trello.com/b/qtk0xPHQ/marvel-dictionary
