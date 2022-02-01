@@ -34,7 +34,7 @@
 
         <!-- All characters -->
         <div class="col-3">
-                
+
         </div>
         <div class="col-9">
             <div class="row cards">
@@ -45,7 +45,7 @@
                             <div class="col-6 p-0 m-0">{{character.name}}</div>
                         </div>
                     </router-link>
-                    
+
                 </div>
             </div>
         </div>
@@ -56,11 +56,11 @@
             :per-page="perPage"
         ></b-pagination>
 </div>
-        
+
     </div>
 </template>
 
-<script> 
+<script>
 import {public_key, secret_key} from '../marvel'
 import axios from 'axios'
 export default {
@@ -77,15 +77,15 @@ export default {
         getCharacters: function(){
             axios
             .get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&limit=50&offset=0`)
-            .then(response => (this.characters = response.data.data.results))    
+            .then(response => (this.characters = response.data.data.results))
             .catch((error) => {
                 console.log(error)
                 }
             )
         },
-        setAltImg(event) { 
-            event.target.src = "../assets/Marvel-Logo-Square.jpeg" 
-        } 
+        setAltImg(event) {
+            event.target.src = "../assets/Marvel-Logo-Square.jpeg"
+        }
     }
 }
 </script>
