@@ -1,10 +1,10 @@
 # marvel-dictionary
-Beware, this project cannot run after a build yet.
+note : this project cannot run after a build yet.
 
 ## Project planning
 https://trello.com/b/qtk0xPHQ/marvel-dictionary
 
-/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / 
+<hr />
 
 ## Project setup
 ```
